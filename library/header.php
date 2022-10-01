@@ -43,6 +43,12 @@
                 </li>
                 <?php else: ?>
                 <li class="nav-item">
+                    <a class="nav-link" href="allusers.php">All Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="changepassword.php">Change Password</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="logout.php">Logout</a>
                 </li>
                 <?php endif; ?>
