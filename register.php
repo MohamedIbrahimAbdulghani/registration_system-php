@@ -1,4 +1,12 @@
-<?php include_once "library/header.php"; ?>
+<?php
+
+include_once "library/header.php"; 
+
+if(isset($_SESSION["user_name"])) {
+    header("Location: index.php");
+}
+
+?>
 
 <div class="container">
         <div class="row">

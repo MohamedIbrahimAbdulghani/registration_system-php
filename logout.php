@@ -1,4 +1,8 @@
-<?php include_once "library/header.php"; ?>
+<?php 
 
 
-<?php include_once "library/footer.php"; ?>
+session_start();
+
+session_destroy();
+
+header("Location: login.php");
