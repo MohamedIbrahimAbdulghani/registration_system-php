@@ -9,9 +9,11 @@ if(!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["mobile"])
     $mobile = filter_var($_POST["mobile"], FILTER_SANITIZE_STRING);
     $password = password_hash(filter_var($_POST["password"], FILTER_SANITIZE_STRING), PASSWORD_DEFAULT);
 
+    
 
-    // $re = new db_connect();
-    // $re->registerFunction($name, $email, $mobile, $password);
+    $q = $connection->prepare("INSERT INTO `users` (`name`, `email`, `mobile`, `password`) VALUES (?, ?, ?, ?) ");
+    $q->execute([$name, $email, $mobile, $password]);
+    
 
     $_SESSION['success'] = "data inserted";
 } else {

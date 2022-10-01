@@ -36,7 +36,7 @@
                             <input type="password" class="form-control" name="password" placeholder="Your Password">
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-block btn-primary"  value="Login">
+                            <input type="submit" class="btn btn-block btn-primary"  value="Register">
                         </div>
                     </form>
                 </div>
